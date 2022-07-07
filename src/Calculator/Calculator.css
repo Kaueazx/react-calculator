@@ -1,0 +1,46 @@
+.Calculator {
+    width: 400px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.Calculator .Keypad,
+.Calculator .Keypad-left,
+.Calculator .Keypad-right {
+    display: flex;
+}
+.Calculator .Keypad {
+    width: 100%;
+    align-items: flex-start;
+}
+.Calculator .Keypad-left {
+    flex-wrap: wrap;
+    flex: 3;
+}
+.Calculator .Keypad-right {
+    flex: 1;
+    flex-direction: column;
+}
+@media (max-width: 450px) {
+    .Calculator {
+        width: 100vw;
+        border-radius: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .Calculator .Display {
+        flex: 1;
+    }
+    .Calculator .Keypad {
+        flex: 2;
+    }
+    .Calculator .Keypad .Button {
+        height: 13vh;
+    }
+    .Calculator .Keypad-left .Button.button-small {
+        width: 33.3%;
+    }
+    .Calculator .Keypad-left .Button.button-medium {
+        width: 66.6%;
+    }
+}

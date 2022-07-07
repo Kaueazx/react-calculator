@@ -1,0 +1,32 @@
+.Button {
+    border-radius: 0;
+    border: 0;
+    font-size: 1.2em;
+    width: 100px;
+    height: 60px;
+    padding: 0;
+    cursor: pointer;
+    transition: .2s all ease-in-out;
+}
+.Button.button-big {
+    width: 100%;
+}
+.Button.button-medium {
+    width: 200px;
+}
+.Button.button-light {
+    background-color: #F0F0F0;
+    color: #505050;
+    border: 1px solid #dfdfdf;
+}
+.Button.button-dark {
+    background-color: #1E90FF;
+    color: #fff;
+    border: 1px solid #1679d9;
+}
+.Button.button-light:hover {
+    background-color: #dfdfdf;
+}
+.Button.button-dark:hover {
+    background-color: #1679d9;
+}
